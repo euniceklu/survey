@@ -1,0 +1,138 @@
+:root {
+  --bg: #f5f5f3;
+  --card: #ffffff;
+  --primary: #2f6b45;
+  --accent: #f1c40f;
+  --text: #222222;
+  --muted: #6b6b6b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #eef7ee 0%, #f8faf7 100%);
+  color: var(--text);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  margin: 0;
+  color: var(--primary);
+}
+
+header p {
+  color: var(--muted);
+}
+
+.survey-card,
+.feedback-card {
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(46, 61, 84, 0.08);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d7d7d7;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.inline-group {
+  max-width: 280px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #255934;
+}
+
+.message {
+  margin-top: 12px;
+  color: var(--primary);
+}
+
+.feedback-entry {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 16px 0;
+}
+
+.feedback-entry:last-child {
+  border-bottom: none;
+}
+
+.feedback-entry h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.feedback-entry p {
+  margin: 4px 0;
+  color: var(--muted);
+}
+
+.feedback-entry .label {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.survey-card form {
+  display: grid;
+  gap: 16px;
+}
+
+.inline-group {
+  width: 100%;
+  max-width: 280px;
+}
+
+@media (max-width: 640px) {
+  .inline-group {
+    max-width: 100%;
+  }
+}

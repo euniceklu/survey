@@ -1,0 +1,15 @@
+{
+  "name": "my-web-app",
+  "version": "1.0.0",
+  "description": "A web application built with HTML, CSS, JavaScript, and PHP.",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "live-server public"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
